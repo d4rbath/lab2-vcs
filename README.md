@@ -13,3 +13,10 @@
 
 Принципы SOLID и слабая связность через интерфейс `INotifier` в проекте.
 
+
+
+## Сборка и запуск
+
+bash
+dotnet build
+dotnet run
