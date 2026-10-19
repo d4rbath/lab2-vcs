@@ -10,6 +10,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+  defaults:
+      run:
+        working-directory: ./IPPRPO
+
     steps:
     - name: Чтение исходного кода
       uses: actions/checkout@v4
