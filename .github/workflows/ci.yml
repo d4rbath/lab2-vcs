@@ -22,8 +22,9 @@ jobs:
     - name: Восстановление зависимостей (NuGet)
       run: dotnet restore IPPRPO_lab1.csproj
 
-    - name: Сборка проекта
+    - name: Сборка проекта WPF
       run: dotnet build IPPRPO_lab1.csproj --no-restore -c Release
 
-    - name: Запуск модульных тестов (xUnit)
-      run: dotnet test --no-build -c Release --verbosity normal || echo "Тесты не найдены, пропуск"
+    - name: Запуск автотестов
+      run: dotnet test --no-build -c Release --verbosity normal
+      continue-on-error: true
