@@ -10,7 +10,7 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-  defaults:
+    defaults:
       run:
         working-directory: ./IPPRPO
 
