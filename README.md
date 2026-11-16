@@ -20,3 +20,8 @@
 bash
 dotnet build
 dotnet run
+
+
+sad
+
+asddqwwezxcasdf
