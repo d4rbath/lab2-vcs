@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Клонирование проекта ${env.PROJECT_NAME}..."
-                checkout scm
+                git branch: 'main', url: 'https://github.com/d4rbath/lab2-vcs.git'
             }
         }
         stage('Setup') {
